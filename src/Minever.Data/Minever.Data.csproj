@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <EnableSourceGenerators>true</EnableSourceGenerators>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Minever.Data.Generators\Minever.Data.Generators.csproj" ReferenceOutputAssembly="false" OutputItemType="Analyzer" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="$(ProjectDir)\minecraft-data\data\pc\1.7\blocks.json" />
+  </ItemGroup>
+
+</Project>
