@@ -10,4 +10,16 @@ internal static class StringExtensions
 
         return string.Concat(words);
     }
+
+    public static string ToMinecraftEdition(this string @string) =>
+        @string switch
+        {
+            "bedrock" => "Bedrock",
+            "pc"      => "Java",
+
+            _ => throw new NotSupportedException()
+        };
+
+    public static string ToMinecraftVersion(this string @string) =>
+        "V" + @string.Replace(".", ".V").Replace('-', '.').Replace("pre", "Pre").Replace("rc", "RC");
 }

@@ -8,11 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Minever.Data.Core\Minever.Data.Core.csproj" />
     <ProjectReference Include="..\Minever.Data.Generators\Minever.Data.Generators.csproj" ReferenceOutputAssembly="false" OutputItemType="Analyzer" />
   </ItemGroup>
 
   <ItemGroup>
-    <AdditionalFiles Include="$(ProjectDir)\minecraft-data\data\pc\1.7\blocks.json" />
+    <AdditionalFiles Include="minecraft-data\data\pc\1.7\blocks.json" />
+    <AdditionalFiles Include="minecraft-data\data\pc\1.8\blocks.json" />
   </ItemGroup>
 
 </Project>

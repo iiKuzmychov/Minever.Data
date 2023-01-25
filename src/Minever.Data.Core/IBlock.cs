@@ -3,5 +3,5 @@
 public interface IBlock
 {
     public int Id { get; }
-    public int Name { get; }
+    public string Name { get; }
 }
